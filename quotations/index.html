@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300|Srisakdi:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One"
+      rel="stylesheet"
+    />
+
+    <!--CSS Animate-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SMART WORDS</title>
+    <!--plik ZERO CSS-->
+    <link rel="stylesheet" href="other/zero_css.css" />
+    <!--plik CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--biblioteka http://scrollmagic.io/   (scroll SVG)-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+    <!--biblioteka SCROLLME     jQuery  2.1.3-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--plugin AOS   + <script>  AOS.init();</script>-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!--PageUP button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img width="50px" height="50px" src="img/up-arrow.png" />
+    </button>
+
+    <!--PERELOADER-->
+    <div id="loader-wrapper">
+      <div class="load">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+      </div>
+    </div>
+    <main id="mainCtrn">
+      <h1 id="title1">Quotations</h1>
+      <div class="cd-fixed-bg cd-fixed-bg--1">
+        <video id="vdo" autoplay="autoplay" loop="loop" width="100%">
+          <source src="video/Pexels Videos 1494292.mp4" type="video/mp4" />
+          <source src="video/Pexels Videos.webm" type="video/webm" />
+        </video>
+      </div>
+
+      <!--main-->
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-1">
+        <div class="cd-scrolling-bg__content-1">
+          <img
+            id="imgToQuotation1"
+            data-aos="fade-right"
+            src="img/Rita Levi-Montalcini 170x150.png"
+            width="100"
+            height="100"
+          />
+          <p id="textOfQuotation1" data-aos="fade-left">
+            "Łatwo jest być piękną kobietą, wystarczy para szpilek i kuse
+            sukienki. Ale żeby być wielką&nbsp;kobietą, musisz ubrać mózg w
+            charakter, osobowość i&nbsp;odwagę."
+            <br />
+            <span id="author1">~ Rita Levi Montalcini ~</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--2"></div>
+      <div id="trigger2" class="spacer s0"></div>
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-2">
+        <!--SVG-->
+        <div id="scrollSVG2">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            id="scrollingSVG2"
+            viewBox="0 0 300 55"
+          >
+            <path
+              id="ornament_RupC"
+              style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1009.23px; stroke-dashoffset: 1009.23px;"
+              fill="none"
+              stroke="#000000"
+              stroke-width="0.5"
+              d="M 34.1,53.4 C 33.5,53.3 32.7,53.1 32,52.7 31.5,52.4 30.9,52.1 30.3,51.7 30.1,51.5 29.8,51.4 29.6,51.2 28.8,50.6 27.9,49.9 27,49.3 26.1,48.6 25.2,48 24.3,47.4 c -0.9,-0.6 -1.8,-1.1 -2.7,-1.5 -0.9,-0.4 -1.8,-0.6 -2.7,-0.6 -0.3,0 -0.7,0.1 -1.1,0.2 -0.4,0.1 -0.8,0.3 -1.3,0.5 -0.4,0.2 -0.8,0.5 -1.2,0.8 -0.4,0.3 -0.7,0.7 -1,1.1 -0.1,0.2 0,0.3 0,0.3 0.1,0.1 0.2,0 0.4,-0.1 1,-1.4 2.4,-2.1 4.2,-2.1 0.8,0 1.8,0.4 2.9,1.2 1.2,0.8 2.4,1.7 3.8,2.7 1.4,1 2.8,1.9 4.3,2.7 0.1,0.1 0.3,0.2 0.4,0.2 1.3,0.7 2.7,1.1 4,1.1 0.1,-0.1 0.2,-0.2 0.1,-0.3 0,-0.2 -0.1,-0.2 -0.3,-0.2 z"
+            ></path>
+
+            <path
+              id="restOfPattern1"
+              style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1009.23px; stroke-dashoffset: 1009.23px;"
+              fill="none"
+              stroke="#000000"
+              stroke-width="0.5"
+              d="m 83.9,46.7 c -0.4,-0.3 -0.8,-0.6 -1.2,-0.8 -0.4,-0.2 -0.9,-0.4 -1.3,-0.5 -0.4,-0.1 -0.8,-0.2 -1.1,-0.2 -0.9,0 -1.8,0.2 -2.7,0.6 -0.9,0.4 -1.8,0.9 -2.7,1.5 -0.9,0.6 -1.8,1.2 -2.7,1.9 -0.9,0.7 -1.8,1.3 -2.6,1.9 -0.2,0.2 -0.5,0.4 -0.7,0.5 -0.6,0.4 -1.2,0.7 -1.7,1 -0.8,0.4 -1.5,0.7 -2.1,0.7 -0.2,0 -0.3,0 -0.3,0.1 0,0.1 0,0.2 0.1,0.3 1.3,0 2.7,-0.4 4,-1.1 0.1,-0.1 0.3,-0.1 0.4,-0.2 1.5,-0.8 2.9,-1.7 4.3,-2.7 1.4,-1 2.6,-1.9 3.8,-2.7 1.1,-0.8 2.1,-1.2 2.9,-1.2 1.8,0 3.2,0.7 4.2,2.1 0.2,0.1 0.3,0.2 0.4,0.1 0.1,0 0.1,-0.1 0,-0.3 -0.2,-0.3 -0.6,-0.7 -1,-1 z"
+            ></path>
+
+            <path
+              id="restOfPattern2"
+              style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1009.23px; stroke-dashoffset: 1009.23px;"
+              fill="none"
+              stroke="#000000"
+              stroke-width="0.5"
+              d="m 91.5,40.5 c -1.1,-0.9 -2.7,-1.4 -5,-1.4 -1.8,0 -3.4,0.3 -5,1 -1.6,0.7 -3.1,1.5 -4.5,2.5 -1.3,0.9 -2.6,1.9 -3.9,2.9 0.1,-0.2 0.2,-0.4 0.3,-0.5 1,-2 2,-4.9 1.4,-7.1 -0.5,-1.8 -2.7,-3 -4.3,-1.7 -1.5,1.2 -1.2,3.5 0.4,4.4 0.2,0.1 0.5,0 0.6,-0.1 0.1,-0.1 0.2,-0.3 0.2,-0.4 -0.2,-0.9 -0.3,-1.8 -0.5,-2.7 0,-0.2 0.8,-1.1 1.7,-0.7 1.8,0.8 1.3,3.7 0.9,5.2 -0.5,1.9 -1.4,3.7 -2.7,5.2 -2.1,1.7 -4.7,2.9 -7.4,3.4 -1,0.2 -2.1,0.2 -3.1,0.2 -1.9,-0.1 -3.7,-0.5 -5.2,-1.7 -1.3,-1.1 -2.1,-2.7 -2.4,-4.4 -0.4,-2.1 -0.1,-4.3 1,-6.2 1.1,-1.8 3,-3.2 5,-3.6 1.7,-0.3 3.5,0 4.9,0.9 1.4,0.9 2.6,2.1 3.1,3.7 0.8,2.7 0,5.8 -2.4,7.4 -1.3,0.8 -2.9,1.3 -4.5,0.9 -1.5,-0.4 -3,-1.6 -3.1,-3.3 0,-0.8 0.2,-1.6 0.7,-2.2 0.4,0.8 1,1.6 1.9,1.8 0.8,0.1 1.7,0 2.2,-0.7 1.2,-1.7 -0.9,-3.3 -2.6,-3 -2,0.4 -3.5,2.4 -3,4.5 0.5,2.3 2.5,3.9 4.8,3.9 2,0 3.9,-0.8 5.3,-2.3 2.4,-2.6 2.6,-6.7 0.3,-9.4 -1.3,-1.5 -3.1,-2.6 -5.1,-3 -2.7,-0.6 -5.5,-0.1 -7.8,1.4 -2,1.3 -3.5,3.4 -4.1,5.8 -0.5,-2.3 -2,-4.5 -4.1,-5.8 -2.3,-1.5 -5.2,-2 -7.8,-1.4 -1.9,0.4 -3.8,1.4 -5.1,3 -2.3,2.8 -2,6.8 0.3,9.4 1.3,1.5 3.3,2.4 5.3,2.3 2.3,0 4.3,-1.6 4.8,-3.9 0.5,-2.1 -1,-4.1 -3,-4.5 -1.6,-0.3 -3.8,1.3 -2.6,3 0.5,0.7 1.4,0.8 2.2,0.7 0.9,-0.2 1.5,-1 1.9,-1.8 0.5,0.6 0.7,1.5 0.7,2.2 -0.1,1.7 -1.6,2.9 -3.1,3.3 -1.5,0.4 -3.2,-0.1 -4.5,-0.9 -2.5,-1.6 -3.2,-4.7 -2.4,-7.4 0.5,-1.7 1.7,-2.8 3.1,-3.7 1.4,-0.9 3.2,-1.2 4.9,-0.9 2.1,0.4 4,1.8 5,3.6 1.1,1.8 1.4,4.1 1,6.2 -0.3,1.7 -1.2,3.3 -2.4,4.4 -1.4,1.3 -3.3,1.7 -5.2,1.7 -1,0 -2.1,-0.1 -3.1,-0.2 -2.7,-0.4 -5.3,-1.6 -7.4,-3.4 -1.3,-1.5 -2.2,-3.3 -2.7,-5.2 -0.4,-1.5 -1,-4.4 0.9,-5.2 0.8,-0.3 1.7,0.5 1.7,0.7 -0.2,0.9 -0.3,1.8 -0.5,2.7 0,0.2 0,0.3 0.2,0.4 0.1,0.2 0.3,0.3 0.6,0.1 1.6,-1 1.9,-3.3 0.4,-4.4 -1.7,-1.3 -3.8,-0.1 -4.3,1.7 -0.6,2.3 0.4,5.1 1.4,7.1 0.1,0.2 0.2,0.4 0.3,0.5 -1.3,-1.1 -2.6,-2.1 -3.9,-2.9 -1.5,-1 -3,-1.8 -4.5,-2.5 -1.6,-0.7 -3.2,-1 -5,-1 -2.2,0 -3.9,0.5 -5,1.4 -1.2,1 -1.7,2.2 -1.7,3.7 0,0.8 0.1,1.4 0.4,2 0.3,0.6 0.6,1 1.1,1.4 0.4,0.4 0.9,0.7 1.4,0.9 0.5,0.2 1,0.3 1.3,0.3 0.2,0 0.1,-0.1 -0.2,-0.2 C 9.7,48.4 9.3,48.2 8.8,47.8 8.4,47.4 8,47 7.5,46.4 7.1,45.8 6.9,45.1 6.9,44.3 c 0,-0.5 0.1,-0.9 0.2,-1.5 0.2,-0.6 0.4,-1.1 0.8,-1.5 0.3,-0.5 0.8,-0.9 1.4,-1.2 0.6,-0.3 1.2,-0.5 2,-0.5 1.7,0 3.4,0.3 4.9,1 1.5,0.7 3.1,1.5 4.6,2.6 1.5,1.1 3,2.2 4.5,3.4 1.5,1.3 3.1,2.4 4.7,3.5 0.1,0.1 0.2,0.2 0.3,0.2 1.6,1.1 3.2,1.9 4.8,2.7 1.8,0.8 3.7,1.2 5.9,1.2 1.5,0 2.8,-0.2 3.9,-0.6 1.1,-0.4 1.9,-0.8 2.6,-1.3 0.9,-0.7 1.7,-1.6 1.9,-2.8 0,-0.3 0,-0.5 -0.1,-0.8 -0.2,-0.3 -0.5,-0.4 -0.8,-0.4 -0.2,0 -0.4,0.1 -0.6,0.4 -0.1,0.3 -0.2,0.5 -0.3,0.8 -0.1,0.3 -0.1,0.6 -0.2,0.8 0,0.3 0,0.4 0,0.5 0,0.4 -0.2,0.8 -0.7,1.1 -0.5,0.3 -1,0.6 -1.6,0.9 -0.6,0.3 -1.3,0.5 -2,0.6 -0.7,0.1 -1.2,0.2 -1.7,0.2 -1.9,0 -3.8,-0.4 -5.6,-1.2 -0.6,-0.3 -1.2,-0.6 -1.8,-0.9 0.3,0.2 0.9,0.2 1.3,0.3 0.4,0.1 0.9,0.2 1.3,0.2 0.9,0.1 1.8,0.2 2.7,0.2 1.7,0 3.5,-0.3 5.1,-1 2.6,-1.1 4.5,-3.4 5.1,-6.1 0.6,2.7 2.5,5 5.1,6.1 1.6,0.7 3.4,1 5.1,1 0.9,0 1.8,0 2.7,-0.2 0.4,-0.1 0.9,-0.1 1.3,-0.2 0.4,-0.1 0.9,-0.1 1.3,-0.3 -0.6,0.3 -1.2,0.6 -1.8,0.9 -1.8,0.8 -3.6,1.2 -5.6,1.2 -0.5,0 -1.1,-0.1 -1.7,-0.2 -0.7,-0.2 -1.3,-0.4 -2,-0.6 -0.6,-0.3 -1.2,-0.6 -1.6,-0.9 -0.4,-0.4 -0.7,-0.7 -0.7,-1.1 0,-0.1 0,-0.2 0,-0.5 0,-0.3 -0.1,-0.5 -0.2,-0.8 -0.1,-0.3 -0.2,-0.6 -0.3,-0.8 -0.2,-0.3 -0.4,-0.4 -0.6,-0.4 -0.3,0 -0.7,0 -0.8,0.4 -0.1,0.2 -0.1,0.5 -0.1,0.8 0.2,1.2 1,2.1 1.9,2.8 0.7,0.5 1.6,1 2.6,1.3 1.1,0.4 2.4,0.6 3.9,0.6 2.1,0 4.1,-0.4 5.9,-1.2 1.7,-0.7 3.3,-1.6 4.8,-2.7 0.1,0 0.2,-0.1 0.3,-0.2 1.6,-1.1 3.2,-2.2 4.7,-3.5 1.5,-1.2 3,-2.4 4.5,-3.4 1.5,-1 3.1,-1.9 4.6,-2.6 1.5,-0.7 3.2,-1 4.9,-1 0.8,0 1.5,0.2 2,0.5 0.6,0.3 1,0.7 1.4,1.2 0.3,0.5 0.6,1 0.8,1.5 0.2,0.6 0.2,1 0.2,1.5 0,0.8 -0.2,1.5 -0.6,2.1 -0.4,0.6 -0.9,1 -1.3,1.4 -0.5,0.4 -0.8,0.6 -1.2,0.8 -0.3,0.2 -0.4,0.2 -0.2,0.2 0.4,0 0.8,-0.1 1.3,-0.3 0.5,-0.2 1,-0.5 1.4,-0.9 0.4,-0.4 0.8,-0.9 1.1,-1.4 0.3,-0.6 0.4,-1.2 0.4,-2 0.1,-1.5 -0.4,-2.7 -1.5,-3.7 z"
+            ></path>
+
+            <path
+              id="restOfPattern3"
+              style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1009.23px; stroke-dashoffset: 1009.23px;"
+              fill="none"
+              stroke="#000000"
+              stroke-width="0.5"
+              d="m 44.671875,92.76554 c -0.327908,0.0141 -0.656391,0.0154 -0.984375,0.0274 l -0.01172,0.0654 c 0.09115,0.0263 0.175781,0.0467 0.253907,0.059 0.07975,0.014 0.154296,0.021 0.222656,0.021 0.190429,0 0.346679,-0.0418 0.46875,-0.12432 0.0202,-0.0135 0.03275,-0.0332 0.05078,-0.0484 z"
+            ></path>
+          </svg>
+          <div class="spacer s2"></div>
+        </div>
+
+        <div class="cd-scrolling-bg__content-2">
+          <p id="textOfQuotation2" data-aos="zoom-out">
+            "Najpiękniejszych chwil w życiu nie zaplanujesz.
+            One&nbsp;przyjdą&nbsp;same."
+            <br />
+            <br />
+            <span id="author2">~ Phil Bosmans ~</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--3"></div>
+
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-3">
+        <div class="scrollme">
+          <div
+            class="animateme"
+            data-when="enter"
+            data-from="0.5"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="-900"
+            data-rotatez="30"
+          >
+            <div class="cd-scrolling-bg__content-3">
+              <p id="textOfQuotation3">
+                "Experience is a hard teacher because she gives the test first,
+                the lesson afterward."
+                <br />
+                <span id="author3">~ Vernon Law ~</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--4"></div>
+
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-4">
+        <div class="scrollme">
+          <div
+            class="animateme"
+            data-when="enter"
+            data-from="0.8"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="4000"
+            data-rotatez="0"
+          >
+            <div class="cd-scrolling-bg__content-4">
+              <p id="textOfQuotation3">
+                "What we see depends mainly on what we look for."
+                <br />
+                <span id="author3">~ John Lubbock ~ </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--5"></div>
+
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-5">
+        <div class="cd-scrolling-bg__content-5">
+          <p id="textOfQuotation5" data-aos="zoom-in">
+            "Najpiękniejsi ludzie, których znam, to&nbsp;ci,&nbsp;którzy znają
+            smak porażki, poznali&nbsp;cierpienie,&nbsp;walkę,&nbsp;stratę,
+            poznali&nbsp;swoją&nbsp;drogę&nbsp;na&nbsp;wyjście&nbsp;z&nbsp;otchłani.
+            <br />Ci ludzie mają wrażliwość i&nbsp;zrozumienie życia, które
+            wypełniają ich współczuciem, łagodnością i&nbsp;głęboką, kochającą
+            troską. <br />Piękni ludzie nie biorą się&nbsp;znikąd."
+            <br />
+            <span id="author5">~ Elizabeth Kübler-Ross ~</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--6"></div>
+
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-6">
+        <div class="cd-scrolling-bg__content-6">
+          <p id="textOfQuotation6" data-aos="flip-up">
+            "Don't worry about failures, worry about the chances you miss when
+            you don't even try."
+            <br />
+            <span id="author6">~ Jack Canfield ~</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--7"></div>
+
+      <div class="cd-scrolling-bg cd-scrolling-bg--color-7">
+        <div class="cd-scrolling-bg__content-6">
+          <p id="textOfQuotation6" data-aos="flip-left">
+            "You only live once, but if you do it right, once is enough.""
+            <br />
+            <span id="author6">~ Mae West ~</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-fixed-bg--8"></div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <script>
+      $("html").addClass("js");
+
+      $(window).load(function() {
+        $("#loader-wrapper").fadeOut();
+      });
+    </script>
+  </body>
+</html>
